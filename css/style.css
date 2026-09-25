@@ -1,0 +1,115 @@
+/* ===== Tag-based rules ===== */
+/* Page-wide background and default font for readability */
+body {
+    background-color: #9c4a13;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Center headings and give them a consistent dark color */
+h1, h2, h3 {
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* Comfortable paragraph spacing */
+p {
+    margin: 12px 0;
+}
+
+/* Style links consistently across the site */
+a {
+    color: #b8341b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists get a little breathing room */
+ul, ol {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+/* ===== Class rules ===== */
+/* Shared header/footer band styling */
+.site-header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 25px 15px;
+}
+
+.site-header h1 {
+    color: white;
+    margin: 0;
+}
+
+.site-footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.site-footer a {
+    color: #ffd27a;
+}
+
+/* Card-style container used for every content block */
+.content-section {
+    background-color: #c2805f;
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the opening DJ Kool Herc quote */
+.quote {
+    font-style: italic;
+    border-left: 4px solid #b8341b;
+    padding-left: 15px;
+    color: #555;
+}
+
+/* Consistent sizing/spacing for images throughout the site */
+.feature-img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 6px;
+}
+
+/* Flexbox container: lays child sections/images out side by side with spacing */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Lets each item in a flex row share space evenly */
+.media-list {
+    flex: 1;
+    min-width: 220px;
+}
+
+/* ===== ID rules ===== */
+/* Slight accent tint to set the "women in hip-hop" section apart */
+#women {
+    background-color: #fff5f0;
+}
+
+/* Gives the timeline intro a bit more top spacing since it follows the header directly */
+#timeline {
+    margin-top: 25px;
+}
