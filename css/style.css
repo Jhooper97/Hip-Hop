@@ -16,6 +16,7 @@ h1, h2, h3 {
     color: #1a1a1a;
 }
 
+
 /* Comfortable paragraph spacing */
 p {
     margin: 12px 0;
@@ -61,17 +62,16 @@ ul, ol {
 .site-footer a {
     color: #ffd27a;
 }
-
 /* Card-style container used for every content block */
 .content-section {
-    background-color: #c2805f;
+    background-color: rgb(234, 164, 44);
     max-width: 800px;
     margin: 15px auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
-
+ 
 /* Styling for the opening DJ Kool Herc quote */
 .quote {
     font-style: italic;
@@ -79,14 +79,14 @@ ul, ol {
     padding-left: 15px;
     color: #555;
 }
-
+ 
 /* Consistent sizing/spacing for images throughout the site */
 .feature-img {
     display: block;
     margin: 15px auto;
     border-radius: 6px;
 }
-
+ 
 /* Flexbox container: lays child sections/images out side by side with spacing */
 .flex-container {
     display: flex;
@@ -96,19 +96,19 @@ ul, ol {
     max-width: 800px;
     margin: 0 auto;
 }
-
+ 
 /* Lets each item in a flex row share space evenly */
 .media-list {
     flex: 1;
     min-width: 220px;
 }
-
+ 
 /* ===== ID rules ===== */
 /* Slight accent tint to set the "women in hip-hop" section apart */
 #women {
-    background-color: #fff5f0;
+    background-color: #c36c41;
 }
-
+ 
 /* Gives the timeline intro a bit more top spacing since it follows the header directly */
 #timeline {
     margin-top: 25px;
