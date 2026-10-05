@@ -9,17 +9,22 @@
 <body>
 
   <header class="site-header">
-    <h1>Hip Hop Timeline</h1>
+       <h1>Hip Hop Timeline</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="page2.html">Hip Hop Timeline</a>
+    </nav>
   </header>
 
   <main>
 
     <!-- Origin story, with a flex row for the two header images -->
-    <section id="timeline" class="content-section">
+     <section id="timeline" class="content-section">
+      <h2>Origins of Hip Hop</h2>
       <div class="flex-container">
-        <img src="Images/origin.jpeg" alt="Hip Hop Origin"
+        <img src="Images/origin.jpeg" alt="DJ Kool Herc standing behind his turntables at a 1970s Bronx block party"
           width="25%" height="35%" class="feature-img" />
-        <img src="Images/collage.jpg" alt="Collage of Hip Hop Artists"
+        <img src="Images/collage.jpg" alt="Collage of hip hop artists including Tupac, Nas, and Lauryn Hill"
           width="35%" height="35%" class="feature-img" />
       </div>
 
@@ -44,7 +49,7 @@
 
     <!-- Women in hip hop section -->
     <section id="women" class="content-section">
-      <img src="Images/saltPepper.jpeg" alt="Female Rap Group Salt-N-Pepa"
+      <img src="Images/saltPepper.jpeg" alt="Salt-N-Pepa posing together in matching colorful jackets"
         width="35%" height="35%" class="feature-img" />
 
       <h2>Women Breaking Barriers in Hip Hop</h2>
@@ -111,9 +116,46 @@
 
   </main>
 
-  <footer class="site-footer">
-    <p>Go <a href="index.html">Home</a>.</p>
+/* Navigation links inside the dark header band */
+  .site-header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.site-header nav a {
+    color: #ffd27a;
+}
+<footer class="site-footer">
+    <p><a href="index.html">Back to the History of Hip-Hop home page</a></p>
   </footer>
 
 </body>
 </html>
+
+#timeline {
+    margin-top: 25px;
+}
+
+/* ===== Responsive: phones and small tablets ===== */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    .content-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Stack side-by-side items vertically */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* Let images fill the card instead of staying at 35% */
+    .feature-img {
+        width: 100%;
+        height: auto;
+    }
+}
+

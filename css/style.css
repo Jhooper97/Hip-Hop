@@ -24,7 +24,7 @@ p {
 
 /* Style links consistently across the site */
 a {
-    color: #b8341b;
+    color: #8a2a12;
     text-decoration: none;
     font-weight: bold;
 }
@@ -58,13 +58,22 @@ ul, ol {
     text-align: center;
     padding: 15px;
 }
+/* Navigation links inside the dark header band */
+  .site-header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.site-header nav a {
+    color: #ffd27a;
+}
 
 .site-footer a {
     color: #ffd27a;
 }
 /* Card-style container used for every content block */
 .content-section {
-    background-color: #c36c41;
+    background-color: #f3d9c4;
     max-width: 800px;
     margin: 15px auto;
     padding: 20px;
@@ -106,10 +115,34 @@ ul, ol {
 /* ===== ID rules ===== */
 /* Slight accent tint to set the "women in hip-hop" section apart */
 #women {
-    background-color: #c36c41;
+    background-color: #f3d9c4;
+
 }
  
 /* Gives the timeline intro a bit more top spacing since it follows the header directly */
 #timeline {
     margin-top: 25px;
+}
+
+/* ===== Responsive: phones and small tablets ===== */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    .content-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Stack side-by-side items vertically */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* Let images fill the card instead of staying at 35% */
+    .feature-img {
+        width: 100%;
+        height: auto;
+    }
 }
